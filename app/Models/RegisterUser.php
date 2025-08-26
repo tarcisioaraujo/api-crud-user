@@ -6,10 +6,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class RegisterUser extends Model
 {
-    // Define os campos que podem ser preenchidos em massa
     protected $fillable = [
         'name',
         'email',
         'cpf',
+        'profile_id',
     ];
+
+    public function profile() 
+    {
+        return $this->hasOne(Profile::class);
+    }
 }
