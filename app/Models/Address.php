@@ -10,4 +10,9 @@ class Address extends Model
         'street',
         'cep',
     ];
+
+    public function registerUser()
+    {
+        return $this->belongsToMany(RegisterUser::class);
+    }
 }

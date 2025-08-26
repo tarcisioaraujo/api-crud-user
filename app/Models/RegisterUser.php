@@ -17,4 +17,9 @@ class RegisterUser extends Model
     {
         return $this->hasOne(Profile::class);
     }
+
+    public function address() 
+    {
+        return $this->belongsToMany(Address::class);
+    }
 }

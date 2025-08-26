@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\AddressController;
 use App\Http\Controllers\Api\RegisterUserController;
 use App\Http\Controllers\Api\ProfileController;
 use Illuminate\Http\Request;
@@ -14,5 +15,9 @@ Route::apiResource('registerUsers', RegisterUserController::class)->except([
 ]);
 
 Route::apiResource('profiles', ProfileController::class)->except([
+    'create', 'show', 'edit'
+]);
+
+Route::apiResource('address', AddressController::class)->except([
     'create', 'show', 'edit'
 ]);
