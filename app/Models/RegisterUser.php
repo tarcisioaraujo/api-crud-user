@@ -20,6 +20,6 @@ class RegisterUser extends Model
 
     public function address() 
     {
-        return $this->belongsToMany(Address::class);
+        return $this->belongsToMany(Address::class, "registerusers_addresses", "registeruser_id", "address_id");
     }
 }

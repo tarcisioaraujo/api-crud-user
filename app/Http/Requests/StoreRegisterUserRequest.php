@@ -25,7 +25,8 @@ class StoreRegisterUserRequest extends FormRequest
             'name' => ['required', 'max:70'],
             'email' => ['required', 'max:70'],
             'cpf' => ['required', 'max:11'],
-            'profile_id' => ['required']
+            'profile_id' => ['required'],
+            'addresses_ids' => ['required', 'array'],
         ];
     }
 }

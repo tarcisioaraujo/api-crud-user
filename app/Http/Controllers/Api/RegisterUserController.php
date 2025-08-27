@@ -33,6 +33,7 @@ class RegisterUserController extends Controller
     public function store(StoreRegisterUserRequest $request)
     {
         $registerUser = RegisterUser::create($request->validated());
+        $registerUser->address()->attach($request->addresses_ids);
         return new RegisterUserResource($registerUser);
     }
 
