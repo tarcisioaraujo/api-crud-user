@@ -19,6 +19,8 @@ class RegisterUserResource extends JsonResource
             'name' => $this->name,
             'email' => $this->email,
             'cpf' => $this->cpf,
+            'custom_field' => 'This is a custom value',
+            'profile' => $this->profile,
             'profile_id' => $this->profile_id,
             'created_at' => $this->created_at,
         ];

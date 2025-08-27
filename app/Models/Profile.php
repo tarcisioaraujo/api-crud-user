@@ -12,6 +12,6 @@ class Profile extends Model
 
     public function registerUser()
     {
-        return $this->belongsToMany(RegisterUser::class);
+        return $this->hasOne(RegisterUser::class);
     }
 }
