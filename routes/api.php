@@ -11,7 +11,7 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::apiResource('registerUsers', RegisterUserController::class)->except([
-    'create', 'show'
+    'create', 'edit'
 ]);
 
 Route::apiResource('profiles', ProfileController::class)->except([
