@@ -59,6 +59,7 @@ class RegisterUserController extends Controller
     public function update(StoreRegisterUserRequest $request, RegisterUser $registerUser)
     {
         $registerUser->update($request->validated());
+        $registerUser->address()->sync($request->addresses_ids); 
         return new RegisterUserResource($registerUser);
     }
 
