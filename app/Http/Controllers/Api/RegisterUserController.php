@@ -42,7 +42,7 @@ class RegisterUserController extends Controller
      */
     public function show(RegisterUser $registerUser)
     {
-        //
+        return new RegisterUserResource($registerUser);
     }
 
     /**
