@@ -68,8 +68,8 @@ cp .env.example .env
 # Run PHP Server
 php artisan serve
 
-# Access address
-http://localhost:8000/api/documentation
+# Access address list of users
+http://localhost:8000/api/registerUsers
 ```
 
 ## :construction_worker: Author
