@@ -1,0 +1,382 @@
+{
+	"info": {
+		"_postman_id": "765e8fdb-fd91-4b02-bc46-cd9692284e93",
+		"name": "api-crud-user",
+		"description": "Coleção de requisições das rotas de anotação",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12006358"
+	},
+	"item": [
+		{
+			"name": "User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE0MDUzODg3NjgsIm5iZiI6MTQwNTM4ODc2NywiZGF0YSI6eyJpZCI6NjI5LCJsb2dpbiI6InRhcmNpc2lvYXJhdWpvIiwibm9tZSI6IlRhcmNpc2lvIFNpbHZhIGRlIEFyYXVqbyIsInVuaWRhZGUiOjkyLCJ1bmlkYWRlRGVzY3JpY2FvIjoiSU5GT1JNUyIsInBlcmZpbCI6M319.9Ap2tNAhLS_qp-nQzYdUmSLOyAE7ArQnn5yQFiAPh-A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Ibulprofeno Severó\",\n\t\"email\" : \"ibul@gmail.com\",\n    \"cpf\" : 92495736182,\n    \"profile_id\": 3,\n    \"addresses_ids\": [1,2]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/registerUsers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"registerUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE0MDUzODg3NjgsIm5iZiI6MTQwNTM4ODc2NywiZGF0YSI6eyJpZCI6NjI5LCJsb2dpbiI6InRhcmNpc2lvYXJhdWpvIiwibm9tZSI6IlRhcmNpc2lvIFNpbHZhIGRlIEFyYXVqbyIsInVuaWRhZGUiOjkyLCJ1bmlkYWRlRGVzY3JpY2FvIjoiSU5GT1JNUyIsInBlcmZpbCI6M319.9Ap2tNAhLS_qp-nQzYdUmSLOyAE7ArQnn5yQFiAPh-A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Perfil 3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/profiles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"profiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Address",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE0MDUzODg3NjgsIm5iZiI6MTQwNTM4ODc2NywiZGF0YSI6eyJpZCI6NjI5LCJsb2dpbiI6InRhcmNpc2lvYXJhdWpvIiwibm9tZSI6IlRhcmNpc2lvIFNpbHZhIGRlIEFyYXVqbyIsInVuaWRhZGUiOjkyLCJ1bmlkYWRlRGVzY3JpY2FvIjoiSU5GT1JNUyIsInBlcmZpbCI6M319.9Ap2tNAhLS_qp-nQzYdUmSLOyAE7ArQnn5yQFiAPh-A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"street\" : \"Rua da Pedra Calçada\",\n    \"cep\" : 40030130\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/address",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"address"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzI2MzEwODgsIm5iZiI6MTU3MjYzMTA4NywiZGF0YSI6eyJpZCI6NjI5LCJsb2dpbiI6InRhcmNpc2lvYXJhdWpvIiwibm9tZSI6IlRhcmNpc2lvIFNpbHZhIGRlIEFyYXVqbyIsInVuaWRhZGUiOjkyLCJ1bmlkYWRlRGVzY3JpY2FvIjoiSU5GT1JNUyIsInBlcmZpbCI6M319.OJM0TabyGOHkfiEiol1Wn4HNNKf7SsertlAcmyof66g|",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ambrósio Silva Sauro II\",\r\n    \"email\": \"ambss@gmail.com\",\r\n    \"cpf\": 12345678932,\r\n    \"profile_id\": 3,\r\n    \"addresses_ids\": [1,2]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/registerUsers/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"registerUsers",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzI2MzEwODgsIm5iZiI6MTU3MjYzMTA4NywiZGF0YSI6eyJpZCI6NjI5LCJsb2dpbiI6InRhcmNpc2lvYXJhdWpvIiwibm9tZSI6IlRhcmNpc2lvIFNpbHZhIGRlIEFyYXVqbyIsInVuaWRhZGUiOjkyLCJ1bmlkYWRlRGVzY3JpY2FvIjoiSU5GT1JNUyIsInBlcmZpbCI6M319.OJM0TabyGOHkfiEiol1Wn4HNNKf7SsertlAcmyof66g|",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\" : \"Perfil 1 editado\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/profiles/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"profiles",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzI2MzEwODgsIm5iZiI6MTU3MjYzMTA4NywiZGF0YSI6eyJpZCI6NjI5LCJsb2dpbiI6InRhcmNpc2lvYXJhdWpvIiwibm9tZSI6IlRhcmNpc2lvIFNpbHZhIGRlIEFyYXVqbyIsInVuaWRhZGUiOjkyLCJ1bmlkYWRlRGVzY3JpY2FvIjoiSU5GT1JNUyIsInBlcmZpbCI6M319.OJM0TabyGOHkfiEiol1Wn4HNNKf7SsertlAcmyof66g|",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\" : \"Ambrósio edit\",\r\n\t\"email\" : \"ambrosio@gmail.com\",\r\n    \"cpf\" : 12345678922\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/registerUsers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"registerUsers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User (collection)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzI2MzEwODgsIm5iZiI6MTU3MjYzMTA4NywiZGF0YSI6eyJpZCI6NjI5LCJsb2dpbiI6InRhcmNpc2lvYXJhdWpvIiwibm9tZSI6IlRhcmNpc2lvIFNpbHZhIGRlIEFyYXVqbyIsInVuaWRhZGUiOjkyLCJ1bmlkYWRlRGVzY3JpY2FvIjoiSU5GT1JNUyIsInBlcmZpbCI6M319.OJM0TabyGOHkfiEiol1Wn4HNNKf7SsertlAcmyof66g|",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/registerUsers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"registerUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User (unique)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzI2MzEwODgsIm5iZiI6MTU3MjYzMTA4NywiZGF0YSI6eyJpZCI6NjI5LCJsb2dpbiI6InRhcmNpc2lvYXJhdWpvIiwibm9tZSI6IlRhcmNpc2lvIFNpbHZhIGRlIEFyYXVqbyIsInVuaWRhZGUiOjkyLCJ1bmlkYWRlRGVzY3JpY2FvIjoiSU5GT1JNUyIsInBlcmZpbCI6M319.OJM0TabyGOHkfiEiol1Wn4HNNKf7SsertlAcmyof66g|",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/registerUsers/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"registerUsers",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzI2MzEwODgsIm5iZiI6MTU3MjYzMTA4NywiZGF0YSI6eyJpZCI6NjI5LCJsb2dpbiI6InRhcmNpc2lvYXJhdWpvIiwibm9tZSI6IlRhcmNpc2lvIFNpbHZhIGRlIEFyYXVqbyIsInVuaWRhZGUiOjkyLCJ1bmlkYWRlRGVzY3JpY2FvIjoiSU5GT1JNUyIsInBlcmZpbCI6M319.OJM0TabyGOHkfiEiol1Wn4HNNKf7SsertlAcmyof66g|",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/profiles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"profiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Address",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzI2MzEwODgsIm5iZiI6MTU3MjYzMTA4NywiZGF0YSI6eyJpZCI6NjI5LCJsb2dpbiI6InRhcmNpc2lvYXJhdWpvIiwibm9tZSI6IlRhcmNpc2lvIFNpbHZhIGRlIEFyYXVqbyIsInVuaWRhZGUiOjkyLCJ1bmlkYWRlRGVzY3JpY2FvIjoiSU5GT1JNUyIsInBlcmZpbCI6M319.OJM0TabyGOHkfiEiol1Wn4HNNKf7SsertlAcmyof66g|",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/address",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"address"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
