@@ -62,33 +62,8 @@ cd api-crud-user
 composer install
 composer update
 
-# Install Node JS dependencies
-npm install
-
 # Set environment variables
 cp .env.example .env
-php artisan key:generate
-
-# Change the .env file to look like this
-DB_CONNECTION=sqlite
-DB_HOST=127.0.0.1
-DB_PORT=3306
-<!-- Remove these lines --!>
-DB_DATABASE=homestead
-DB_USERNAME=homestead
-DB_PASSWORD=secret
-<!------------------------!>
-
-# Add in .env file this
-L5_SWAGGER_GENERATE_ALWAYS=true
-SWAGGER_VERSION=2.0
-
-# Create SQLite database file
-copy con .\database\database.sqlite
-<press the F6 key>
-
-# Create Database tables
-php artisan migrate
 
 # Run PHP Server
 php artisan serve
