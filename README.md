@@ -18,7 +18,7 @@ A User CRUD API built on Laravel 11.
 
 <p align="center">
 	<kbd>
-		<img alt="Login" title="#Login" width="512" height="333" style="border-radius: 5px" src="./assets/endpoints.png">
+		<img alt="Login" title="#Login" width="197" height="315" style="border-radius: 5px" src="./assets/endpoints.png">
 	</kbd>		
 </p>
 
@@ -95,15 +95,6 @@ php artisan serve
 
 # Access address
 http://localhost:8000/api/documentation
-```
-
-## :muscle: Testing
-
-Steps to run automated tests
-
-```
-# Run tests
-composer test
 ```
 
 ## :construction_worker: Author
